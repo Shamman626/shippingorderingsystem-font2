@@ -1,5 +1,5 @@
 <template>
-    <el-container class="home-container">
+  <el-container class="home-container">
     <!-- 页面主体区域 -->
     <el-container class="all">
       <!-- 侧边栏 -->
@@ -18,54 +18,24 @@
               <!-- 图标 -->
               <i class="el-icon-s-home"></i>
               <!-- 文本 -->
-              <span>功能主页</span>
+              <span>订单与包裹</span>
             </template>
-              <el-menu-item index="plan">
+              <el-menu-item index="createShippingOrder">
                 <template slot="title">
                   <i class="el-icon-video-camera"></i>
-                  <span>出库入库</span>
+                  <span>寄件</span>
                 </template>
               </el-menu-item>
-              <el-menu-item index="seek">
+              <el-menu-item index="checkShipment">
                 <template slot="title">
                   <i class="el-icon-video-camera"></i>
-                  <span>包裹信息查询</span>
+                  <span>查询包裹信息</span>
                 </template>
               </el-menu-item>
         </el-submenu>
-        <el-submenu >
-            <template slot="title">
-              <!-- 图标 -->
-              <i class="el-icon-user"></i>
-              <!-- 文本 -->
-              <span>个人中心</span>
-            </template>
-            <!-- 二级菜单 -->
-            <el-menu-item-group>
-              <!-- <template slot="title">个人信息中心</template> -->
-              <el-menu-item index="personalPage">
-                <template slot="title">
-                  <i class="el-icon-user"></i>
-                  <span>个人主页</span>
-                </template>
-              </el-menu-item>
-              <el-menu-item index="changeInfo">
-                <template slot="title">
-                  <i class="el-icon-user-solid"></i>
-                  <span>消费记录</span>
-                </template>
-              </el-menu-item>
-              <el-menu-item index="changePW">
-                <template slot="title">
-                  <i class="el-icon-edit"></i>
-                  <span>密码修改</span>
-                </template>
-              </el-menu-item>
-            </el-menu-item-group>
-        </el-submenu>
-        <el-menu-item index="dataStatistics" class="test">
+        <el-menu-item index="fee" class="test">
         <i class="el-icon-place"></i>
-        <span slot="title">数据统计</span>
+        <span slot="title">支付中心</span>
       </el-menu-item>
         </el-menu>
       </el-aside>
@@ -79,7 +49,6 @@
 
 <script>
 export default {
-  name: 'Home',
   components: {
   },
   created () {

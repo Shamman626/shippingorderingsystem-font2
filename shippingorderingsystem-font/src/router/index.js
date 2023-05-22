@@ -5,6 +5,7 @@ import Register from '@/components/user/Register'
 import Home from '@/components/Home'
 import CheckShipment from '@/components/shipments/CheckShipment'
 import CreateShippingOrder from '@/components/shipments/CreateShippingOrder'
+import Fee from '@/components/fee/Fee'
 
 Vue.use(VueRouter)
 
@@ -17,8 +18,9 @@ const routes = [
     component: Home,
     children: [
       // 写子路由  显示在主区域
-      { path: '/checkShipment', component: CheckShipment},
-      { path: '/createShippingOrder', component: CreateShippingOrder}
+      { path: '/checkShipment', component: CheckShipment },
+      { path: '/createShippingOrder', component: CreateShippingOrder },
+      { path: '/fee', component: Fee }
     ]
   }
 ]
